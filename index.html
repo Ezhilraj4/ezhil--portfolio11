@@ -97,6 +97,60 @@
       I love web development and creating clean, simple websites.  
       My class teacher is <strong>Ms. Menaga</strong>, who always motivates me to explore, learn, and build new things.
     </p>
+    <h2 style="text-align: center; margin-top: 50px; font-size: 28px; color: #333;">🏅 My Certificates</h2>
+
+<div style="display: flex; flex-direction: column; align-items: center; gap: 40px; margin: 40px 0;">
+  <div>
+    <img src="cert1.jpg" alt="Certificate 1" class="cert-img" onclick="openModal(this.src)">
+    <p style="text-align: center; font-weight: bold; margin-top: 10px;">AI Workshop Certificate</p>
+  </div>
+  <div>
+    <img src="cert2.jpg" alt="Certificate 2" class="cert-img" onclick="openModal(this.src)">
+    <p style="text-align: center; font-weight: bold; margin-top: 10px;">Python Course Certificate</p>
+  </div>
+  <div>
+    <img src="cert3.jpg" alt="Certificate 3" class="cert-img" onclick="openModal(this.src)">
+    <p style="text-align: center; font-weight: bold; margin-top: 10px;">National Science Fair</p>
+  </div>
+  <div>
+    <img src="cert4.jpg" alt="Certificate 4" class="cert-img" onclick="openModal(this.src)">
+    <p style="text-align: center; font-weight: bold; margin-top: 10px;">Quiz Competition Winner</p>
+  </div>
+  <div>
+    <img src="cert5.jpg" alt="Certificate 5" class="cert-img" onclick="openModal(this.src)">
+    <p style="text-align: center; font-weight: bold; margin-top: 10px;">English Olympiad Rank Holder</p>
+  </div>
+</div>
+
+<!-- Certificate Modal Popup -->
+<div id="modal" onclick="closeModal()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); z-index:1000; justify-content:center; align-items:center;">
+  <img id="modal-img" src="" style="max-width:90%; max-height:90%; border-radius:10px; box-shadow:0 0 20px white;">
+</div>
+
+<style>
+.cert-img {
+  width: 90%;
+  max-width: 700px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.cert-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+</style>
+
+<script>
+function openModal(src) {
+  document.getElementById("modal-img").src = src;
+  document.getElementById("modal").style.display = "flex";
+}
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
+</script>
     <p style="text-align: center;">
      and i am good in <strong>python,css,html,js</strong>
   </section>
