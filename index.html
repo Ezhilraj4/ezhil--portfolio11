@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ezhil Raj - Portfolio</title>
+  <meta name="description" content="Welcome to the official portfolio of Ezhil Raj, a passionate student at Chettinadu Public School skilled in Python, web development, and digital innovation.">
+  <meta name="keywords" content="Ezhil Raj, student, portfolio, Chettinadu Public School, HTML, CSS, JS, Python, certificates">
+  <meta name="author" content="Ezhil Raj">
   <style>
     body {
       margin: 0;
@@ -11,123 +13,62 @@
       background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #333;
-    }
+    }header {
+  background: rgba(34, 34, 34, 0.8);
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+}
 
-    header {
-      background: rgba(34, 34, 34, 0.8);
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
-    }
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  background: rgba(68, 68, 68, 0.85);
+  padding: 0.75rem;
+}
 
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      background: rgba(68, 68, 68, 0.8);
-      padding: 0.5rem;
-    }
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
+section {
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
 
-    section {
-      background-color: rgba(255, 255, 255, 0.85);
-      padding: 2rem;
-      max-width: 800px;
-      margin: 2rem auto;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
+.project, .certificate {
+  background: white;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
 
-    .project {
-      background: white;
-      margin-bottom: 1rem;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(34, 34, 34, 0.8);
+  color: white;
+}
 
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: rgba(34, 34, 34, 0.8);
-      color: white;
-    }
+img.profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: block;
+  margin: 0 auto 1rem auto;
+}
 
-    img.profile {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      display: block;
-      margin: 0 auto 1rem auto;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Ezhil Raj.G</h1>
-    <p>10th Grade Student | Chettinadu Public School,managiri,karikudi</p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <img src="ezhil.jpg" alt="Ezhil Raj" class="profile">
-    <p style="text-align: center;">
-      Hello! I'm <strong>Ezhil Raj</strong>, a 10th-grade student at <strong>Chettinadu Public School</strong>.  
-      I love web development and creating clean, simple websites.  
-      My class teacher is <strong>Ms. Menaga</strong>, who always motivates me to explore, learn, and build new things.
-    </p>
-    <h2 style="text-align: center; margin-top: 50px; font-size: 28px; color: #333;">🏅 My Certificates</h2>
-
-<div style="display: flex; flex-direction: column; align-items: center; gap: 40px; margin: 40px 0;">
-  <div>
-    <img src="cert1.jpg" alt="Certificate 1" class="cert-img" onclick="openModal(this.src)">
-    <p style="text-align: center; font-weight: bold; margin-top: 10px;">google cloud Engineer</p>
-  </div>
-  <div>
-    <img src="cert2.jpg" alt="Certificate 2" class="cert-img" onclick="openModal(this.src)">
-    <p style="text-align: center; font-weight: bold; margin-top: 10px;">search Ads 360</p>
-  </div>
-  <div>
-    <img src="cert3.jpg" alt="Certificate 3" class="cert-img" onclick="openModal(this.src)">
-    <p style="text-align: center; font-weight: bold; margin-top: 10px;">google analytics</p>
-  </div>
-  <div>
-    <img src="cert4.jpg" alt="Certificate 4" class="cert-img" onclick="openModal(this.src)">
-    <p style="text-align: center; font-weight: bold; margin-top: 10px;">microsoft certificate</p>
-  </div>
-  <div>
-    <img src="cert5.jpg" alt="Certificate 5" class="cert-img" onclick="openModal(this.src)">
-    <p style="text-align: center; font-weight: bold; margin-top: 10px;"> Harvard University certificate </p>
-  </div>
-</div>
-
-<!-- Certificate Modal Popup -->
-<div id="modal" onclick="closeModal()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); z-index:1000; justify-content:center; align-items:center;">
-  <img id="modal-img" src="" style="max-width:90%; max-height:90%; border-radius:10px; box-shadow:0 0 20px white;">
-</div>
-
-<style>
 .cert-img {
   width: 90%;
   max-width: 700px;
@@ -136,48 +77,85 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
 .cert-img:hover {
   transform: scale(1.03);
   box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
-</style>
 
-<script>
-function openModal(src) {
-  document.getElementById("modal-img").src = src;
-  document.getElementById("modal").style.display = "flex";
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-function closeModal() {
-  document.getElementById("modal").style.display = "none";
-}
-</script>
+
+  </style>
+</head>
+<body>  <header>
+    <h1>Ezhil Raj.G</h1>
+    <p>10th Grade Student | Chettinadu Public School, Managiri, Karaikudi</p>
+  </header>  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>  <section id="about">
+    <h2>About Me</h2>
+    <img src="ezhil.jpg" alt="Ezhil Raj" class="profile">
     <p style="text-align: center;">
-     and i am good in <strong>python,css,html,js</strong>
-  </section>
+      Hello! I'm <strong>Ezhil Raj</strong>, a 10th-grade student at <strong>Chettinadu Public School</strong>. I love web development and creating clean, simple websites. My class teacher is <strong>Ms. Menaga</strong>, who always motivates me to explore, learn, and build new things. I am skilled in <strong>Python, CSS, HTML, JS</strong>.
+    </p><h2 style="text-align: center; margin-top: 50px; font-size: 28px; color: #333;">🏅 My Certificates</h2>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 40px; margin: 40px 0;">
+  <div class="certificate">
+    <img src="cert1.jpg" alt="Google Cloud Engineer" class="cert-img" onclick="openModal(this.src)">
+    <p style="text-align: center; font-weight: bold; margin-top: 10px;">Google Cloud Engineer</p>
+  </div>
+  <div class="certificate">
+    <img src="cert2.jpg" alt="Search Ads 360" class="cert-img" onclick="openModal(this.src)">
+    <p style="text-align: center; font-weight: bold; margin-top: 10px;">Search Ads 360</p>
+  </div>
+  <div class="certificate">
+    <img src="cert3.jpg" alt="Google Analytics" class="cert-img" onclick="openModal(this.src)">
+    <p style="text-align: center; font-weight: bold; margin-top: 10px;">Google Analytics</p>
+  </div>
+  <div class="certificate">
+    <img src="cert4.jpg" alt="Microsoft Certificate" class="cert-img" onclick="openModal(this.src)">
+    <p style="text-align: center; font-weight: bold; margin-top: 10px;">Microsoft Certificate</p>
+  </div>
+  <div class="certificate">
+    <img src="cert5.jpg" alt="Harvard University Certificate" class="cert-img" onclick="openModal(this.src)">
+    <p style="text-align: center; font-weight: bold; margin-top: 10px;">Harvard University Certificate</p>
+  </div>
+</div>
 
-  <section id="projects">
+<div id="modal" onclick="closeModal()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); z-index:1000; justify-content:center; align-items:center;">
+  <img id="modal-img" src="" style="max-width:90%; max-height:90%; border-radius:10px; box-shadow:0 0 20px white;">
+</div>
+
+  </section>  <section id="projects">
     <h2>Projects</h2>
     <div class="project">
       <h3>My First Project</h3>
-      <p>A basic website I built using HTML, CSS, and JavaScript. It helped me learn how web pages work (shorturl.at/KUxEU.</p>
+      <p>A basic website I built using HTML, CSS, and JavaScript. It helped me understand how websites work. <a href="https://shorturl.at/KUxEU" target="_blank">View Project</a></p>
     </div>
     <div class="project">
       <h3>Another Cool Project</h3>
-      <p>A fun game or app project (you can describe it here or link to GitHub when you’re ready).</p>
+      <p>A fun web app or game project — more details coming soon!</p>
     </div>
-  </section>
-
-  <section id="contact">
+  </section>  <section id="contact">
     <h2>Contact</h2>
-    <p>Email: ezhilraj265@gmail.com</p>
+    <p>Email: <a href="mailto:ezhilraj265@gmail.com">ezhilraj265@gmail.com</a></p>
     <p>GitHub: <a href="https://github.com/ezhilraj" target="_blank">ezhilraj</a></p>
-    <p>Instagram: <a href="https://www.instagram.com/silent.poetry_11/" target="_blank">ezhilraj</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Ezhil Raj</p>
-  </footer>
-
-</body>
+    <p>Instagram: <a href="https://www.instagram.com/silent.poetry_11/" target="_blank">@silent.poetry_11</a></p>
+  </section>  <footer>
+    <p>&copy; 2025 Ezhil Raj. All rights reserved.</p>
+  </footer>  <script>
+    function openModal(src) {
+      document.getElementById("modal-img").src = src;
+      document.getElementById("modal").style.display = "flex";
+    }
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  </script></body>
 </html>
-
