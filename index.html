@@ -6,6 +6,33 @@
   <meta name="keywords" content="Ezhil Raj, student portfolio, Chettinadu Public School, web developer, certificates, HTML CSS JS Python">
   <meta name="author" content="Ezhil Raj">
   <title>Ezhil Raj - Portfolio</title>
+  
+    <style>
+/* Slide up animation on scroll */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Button hover effect */
+a:hover, button:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Image hover zoom */
+.cert-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+</style>
   <style>
     html {
       scroll-behavior: smooth;
@@ -115,6 +142,24 @@ img.profile {
 
   </style>
 </head>
+  <script>
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll('.animate-on-scroll');
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const elementTop = reveals[i].getBoundingClientRect().top;
+      const elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("visible");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  window.addEventListener("load", revealOnScroll); // initial load
+</script>
+
 <body>  <header>
     <h1>Ezhil Raj.G</h1>
     <p>10th Grade Student | Chettinadu Public School, Managiri, Karaikudi</p>
@@ -130,6 +175,11 @@ img.profile {
       I love web development and creating clean, simple websites.<br>
       My class teacher is <strong>Ms. Menaga</strong>, who always motivates me to explore, learn, and build new things.
     </p><h2 style="text-align: center; margin-top: 50px; font-size: 28px; color: #333;">🏅 My Certificates</h2>
+    class="animate-on-scroll"
+    <div class="animate-on-scroll">
+  <!-- Your certificate or content block here -->
+</div>
+
 <div style="display: flex; flex-direction: column; align-items: center; gap: 40px; margin: 40px 0;">
   <div>
     <img src="cert1.jpg" alt="Certificate 1" class="cert-img" onclick="openModal(this.src)">
