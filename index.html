@@ -1,241 +1,165 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Portfolio of Ezhil Raj, 10th-grade student passionate about coding, web development, and technology.">
-  <meta name="keywords" content="Ezhil Raj, student portfolio, Chettinadu Public School, web developer, certificates, HTML CSS JS Python">
-  <meta name="author" content="Ezhil Raj">
-  <title>Ezhil Raj - Portfolio</title>
-  
-    <style>
-/* Slide up animation on scroll */
-.animate-on-scroll {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intelligence Designed To Evolve</title>
 
-.animate-on-scroll.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+  <!-- Google Fonts: Inter (400, 500, 600) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
 
-/* Button hover effect */
-a:hover, button:hover {
-  transition: all 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
+  <!-- BubbledotICG-FinePos CDN via OnlineWebFonts -->
+  <link
+    href="https://db.onlinewebfonts.com/c/8cb707a9b8a73f8a7403336b861c3074?family=BubbledotICG-FinePos"
+    rel="stylesheet"
+    type="text/css"
+  />
 
-/* Image hover zoom */
-.cert-img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
-}
-</style>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #333;
-      transition: background 0.3s ease;
-    }header {
-  background: rgba(34, 34, 34, 0.85);
-  color: #fff;
-  padding: 2rem 1rem;
-  text-align: center;
-  animation: fadeIn 1s ease-in-out;
-}
+  <!-- Font Awesome 6.5.2 Brands from cdnjs -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  background: rgba(68, 68, 68, 0.9);
-  padding: 0.75rem;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  position: relative;
-  transition: color 0.3s;
-}
-nav a:hover {
-  color: #ffd700;
-}
-
-section {
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 2rem;
-  max-width: 850px;
-  margin: 2rem auto;
-  border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-  animation: fadeInUp 1s ease forwards;
-}
-
-.project {
-  background: white;
-  margin-bottom: 1.5rem;
-  padding: 1rem 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
-}
-.project:hover {
-  transform: translateY(-3px);
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: rgba(34, 34, 34, 0.85);
-  color: white;
-}
-
-img.profile {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  display: block;
-  margin: 0 auto 1rem auto;
-}
-
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.cert-img {
-  width: 90%;
-  max-width: 700px;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-.cert-img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
-}
-
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-  <script>
-  function revealOnScroll() {
-    const reveals = document.querySelectorAll('.animate-on-scroll');
-    for (let i = 0; i < reveals.length; i++) {
-      const windowHeight = window.innerHeight;
-      const elementTop = reveals[i].getBoundingClientRect().top;
-      const elementVisible = 150;
+<body>
+  <!-- Full viewport background video -->
+  <div class="bg">
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source
+        src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260809_012548_ef22562c-c0ae-4816-ad9d-f8922af4e6a7.mp4"
+        type="video/mp4"
+      />
+    </video>
+  </div>
 
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("visible");
-      }
-    }
-  }
-
-  window.addEventListener("scroll", revealOnScroll);
-  window.addEventListener("load", revealOnScroll); // initial load
-</script>
-
-<body>  <header>
-    <h1>Ezhil Raj.G</h1>
-    <p>10th Grade Student | Chettinadu Public School, Managiri, Karaikudi</p>
-  </header>  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>  <section id="about">
-    <h2>About Me</h2>
-    <img src="ezhil.jpg" alt="Ezhil Raj" class="profile">
-    <p style="text-align: center;">
-      Hello! I'm <strong>Ezhil Raj</strong>, a 10th-grade student at <strong>Chettinadu Public School</strong>.<br>
-      I love web development and creating clean, simple websites.<br>
-      My class teacher is <strong>Ms. Menaga</strong>, who always motivates me to explore, learn, and build new things.
-    </p><h2 style="text-align: center; margin-top: 50px; font-size: 28px; color: #333;">🏅 My Certificates</h2>
+  <!-- Single-viewport container -->
+  <div class="page">
     
-    <div class="animate-on-scroll">
-  <!-- Your certificate or content block here -->
-</div>
+    <!-- 1. Header (Desktop & Mobile) -->
+    <header class="header">
+      <a href="https://ezhilraj4.github.io/vov/" class="logo-link" aria-label="VOV Intelligence Home">
+        <img src="assets/logo.webp" alt="" width="52" height="52" class="logo-img" />
+      </a>
 
-<div style="display: flex; flex-direction: column; align-items: center; gap: 40px; margin: 40px 0;">
-  <div>
-    <img src="cert1.jpg" alt="Certificate 1" class="cert-img" onclick="openModal(this.src)">
-    <p style="text-align: center; font-weight: bold; margin-top: 10px;">Google Cloud Engineer</p>
-  </div>
-  <div>
-    <img src="cert2.jpg" alt="Certificate 2" class="cert-img" onclick="openModal(this.src)">
-    <p style="text-align: center; font-weight: bold; margin-top: 10px;">Search Ads 360</p>
-  </div>
-  <div>
-    <img src="cert3.jpg" alt="Certificate 3" class="cert-img" onclick="openModal(this.src)">
-    <p style="text-align: center; font-weight: bold; margin-top: 10px;">Google Analytics</p>
-  </div>
-  <div>
-    <img src="cert4.jpg" alt="Certificate 4" class="cert-img" onclick="openModal(this.src)">
-    <p style="text-align: center; font-weight: bold; margin-top: 10px;">Microsoft Certificate</p>
-  </div>
-  <div>
-    <img src="cert5.jpg" alt="Certificate 5" class="cert-img" onclick="openModal(this.src)">
-    <p style="text-align: center; font-weight: bold; margin-top: 10px;">Harvard University Certificate</p>
-  </div>
-</div>
+      <!-- Desktop Nav Pill -->
+      <nav class="nav-pill" aria-label="Primary navigation">
+        <a href="https://ezhilraj4.github.io/vov/" class="nav-link active">Home</a>
+        <a href="#product" class="nav-link">Product</a>
+        <a href="#cases" class="nav-link">Case Studies</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
 
-<!-- Certificate Modal -->
-<div id="modal" onclick="closeModal()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); z-index:1000; justify-content:center; align-items:center;">
-  <img id="modal-img" src="" style="max-width:90%; max-height:90%; border-radius:10px; box-shadow:0 0 20px white;">
-</div>
+      <!-- Desktop Sign In Button -->
+      <a href="#signin" class="btn-signin">Sign In</a>
 
-<p style="text-align: center;">
-  I am also good in <strong>Python, CSS, HTML, JavaScript</strong>.
-</p>
+      <!-- Mobile Hamburger Toggle (hidden on desktop) -->
+      <button class="burger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </button>
+    </header>
 
-  </section>  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>My First Project</h3>
-      <p>A basic website I built using HTML, CSS, and JavaScript. It helped me learn how web pages work. <a href="https://shorturl.at/KUxEU" target="_blank">View Project</a></p>
+    <!-- 2. Hero Region (Centered) -->
+    <main class="hero">
+      
+      <!-- Trust row with overlapping rings and pill -->
+      <div class="trust-row anim" style="--d: 0.05s;">
+        <div class="trust-avatars">
+          <!-- Microsoft Avatar -->
+          <div class="avatar-ring a1" aria-label="Microsoft Enterprise Partner">
+            <div class="avatar-inner">
+              <i class="fa-brands fa-microsoft"></i>
+            </div>
+          </div>
+          <!-- Amazon Avatar -->
+          <div class="avatar-ring a2" aria-label="Amazon Enterprise Partner">
+            <div class="avatar-inner">
+              <i class="fa-brands fa-amazon"></i>
+            </div>
+          </div>
+          <!-- Google Avatar -->
+          <div class="avatar-ring a3" aria-label="Google Enterprise Partner">
+            <div class="avatar-inner">
+              <i class="fa-brands fa-google"></i>
+            </div>
+          </div>
+        </div>
+        <div class="trust-pill">
+          <span>Trusted by 2000+ Enterprises</span>
+        </div>
+      </div>
+
+      <!-- Dot-matrix Headline -->
+      <h1 class="headline anim" aria-label="Intelligence Designed To Evolve">
+        <span class="headline-line line-1">Intelligence</span>
+        <span class="headline-line line-2">Designed To Evolve</span>
+      </h1>
+
+      <!-- Subhead -->
+      <p class="subhead anim" style="--d: 0.28s;">
+        Build applications that reason, adapt and collaborate using a modular
+        AI platform designed for production.
+      </p>
+
+      <!-- Get Started CTA -->
+      <div class="cta-wrapper anim" style="--d: 0.4s;">
+        <a href="https://ezhilraj4.github.io/vov/" class="btn-cta">Get Started</a>
+      </div>
+    </main>
+
+    <!-- 3. Stats Footer (4 Metrics) -->
+    <footer class="stats-footer">
+      <div class="stat-card anim" style="--d: 0.5s;" data-target="120" data-suffix="ms" data-decimals="0">
+        <span class="stat-glyph">&lt;</span>
+        <span class="stat-value">0ms</span>
+        <span class="stat-label">Inference Time</span>
+      </div>
+
+      <div class="stat-card anim" style="--d: 0.58s;" data-target="99.99" data-suffix="%" data-decimals="2">
+        <span class="stat-glyph">%</span>
+        <span class="stat-value">0.00%</span>
+        <span class="stat-label">Platform Uptime</span>
+      </div>
+
+      <div class="stat-card anim" style="--d: 0.66s;" data-target="24" data-suffix="/7" data-decimals="0">
+        <span class="stat-glyph">*</span>
+        <span class="stat-value">0/7</span>
+        <span class="stat-label">Autonomous Runtime</span>
+      </div>
+
+      <div class="stat-card anim" style="--d: 0.74s;" data-target="2.4" data-suffix="M" data-decimals="1">
+        <span class="stat-glyph">#</span>
+        <span class="stat-value">0.0M</span>
+        <span class="stat-label">Context Windows</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Mobile Drawer Overlay & Sheet -->
+  <div class="mobile-overlay" id="mobile-menu" hidden>
+    <div class="mobile-sheet">
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="https://ezhilraj4.github.io/vov/" class="mobile-nav-link active">Home</a>
+        <a href="#product" class="mobile-nav-link">Product</a>
+        <a href="#cases" class="mobile-nav-link">Case Studies</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <a href="#signin" class="mobile-signin">Sign In</a>
+      </nav>
     </div>
-    <div class="project">
-      <h3>Another Cool Project</h3>
-      <p>A fun game or app project (you can describe it here or link to GitHub when you’re ready).</p>
-    </div>
-  </section>  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:ezhilraj265@gmail.com">ezhilraj265@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/ezhilraj4" target="_blank">ezhilraj</a></p>
-    <p>Instagram: <a href="https://www.instagram.com/silent.poetry_11/" target="_blank">@silent.poetry_11</a></p>
-  </section>  <footer>
-    <p>&copy; 2025 Ezhil Raj</p>
-  </footer>  <script>
-    function openModal(src) {
-      document.getElementById("modal-img").src = src;
-      document.getElementById("modal").style.display = "flex";
-    }
-    function closeModal() {
-      document.getElementById("modal").style.display = "none";
-    }
-  </script></body>
+  </div>
+
+  <script src="main.js"></script>
+</body>
 </html>
